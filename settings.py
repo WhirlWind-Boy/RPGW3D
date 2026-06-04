@@ -57,6 +57,7 @@ MANA_POTION_PATH = "mana_potion.png"
 BUSH_PATH = "bush.png"
 TREE_DEAD_PATH = "DeadTree.png"
 TREE_LEAFY_PATH = "LeafyTree.png"
+TREE_LEAFY_PATHS = ["LeafyTree.png", "LeafyTree2.png", "LeafyTree3.png"]
 ROCK_PATH = "rocks.png"
 FIREBALL_PATH = "fireball.png"
 
@@ -67,14 +68,30 @@ FOOD_PATH = "food.png"
 ARTIFACT_PATH = "artifact.png"
 
 class TileType(Enum):
-    EMPTY = 0; WALL_BRICK = 1; DOOR = 2; WATER = 3; GRASS = 4
-    TREE = 5; WALL_STONE = 6; WALL_WOOD = 7; STANDING_TORCH = 8; WALL_TORCH = 9
-    BUSH = 10; ROCK = 11; DEAD_TREE = 12
-    ITEM_DAGGER = 13; ITEM_KEY = 14; ITEM_FOOD = 15; ITEM_ARTIFACT = 16
+    EMPTY = 0
+    WALL_BRICK = 1
+    DOOR = 2
+    WATER = 3
+    GRASS = 4
+    TREE = 5
+    WALL_STONE = 6
+    WALL_WOOD = 7
+    STANDING_TORCH = 8
+    WALL_TORCH = 9
+    BUSH = 10
+    ROCK = 11
+    DEAD_TREE = 12
+    ITEM_DAGGER = 13
+    ITEM_KEY = 14
+    ITEM_FOOD = 15
+    ITEM_ARTIFACT = 16
     ITEM_HEALTH_POTION = 17
 
 class FloorTextureType(Enum):
-    DIRT = 1; STONE = 2; WOOD = 3; GRASS = 4
+    DIRT = 1
+    STONE = 2
+    WOOD = 3
+    GRASS = 4
 
 MAP_DATA_FILE = "map_data.json"
 TOOLBAR_HEIGHT = 80
