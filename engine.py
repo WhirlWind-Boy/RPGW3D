@@ -1,6 +1,7 @@
 import pygame
 
-class Inventory:
+class InventoryUI:
+    """Inventory UI display class - note: actual Inventory logic is in inventory.py"""
     def __init__(self, icons_dict, sfx_dict):
         self.slots = [None] * 16 
         self.visible = False
